@@ -6,9 +6,8 @@ The  [Congress.gov Application Programming Interface (API)](https://api.congress
 
 Within the Congress.gov API, responses are returned in XML or JSON formats. An `<api-root>` element will be visible for responses returned in XML.
 
-For every request, three elements are returned:
-
-- The **Request** element contains information about the API request itself. This includes the format and the `<contentType>`; this is essentially the information you might expect to see in a request header.
+For every request, three elements are returned: 
+- The *Request* element contains information about the API request itself. This includes the format and the `<contentType>`; this is essentially the information you might expect to see in a request header.
 - The **Pagination** element contains a count of how many total data items are contained within the response, a URL containing the next page of results; and, if the offset is greater than 1, a URL containing the previous page of results.
 - The **Data** element, the name of which changes depending on the endpoint utilized (i.e. `<bills>` for the bill endpoint, `<amendments>` for the amendment endpoint, etc.). This element contains a list of all data items returned by your API call.
 
